@@ -1,0 +1,105 @@
+div.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2b2b;
+    box-shadow: 0 3px 5px black;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1000ms;
+}
+div.menu>nav{
+    width: inherit;
+}
+div.menu>nav>ul{
+    width: inherit;
+    list-style: none;
+    text-align: center;
+}
+div.menu>nav>ul>li{
+    width: 100%;
+    height: 40px;
+}
+div.menu>nav>ul>li>a{
+    width: auto;
+    height: inherit;
+    text-decoration: none;
+    color: orangered;
+    padding:0 10px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 100ms;
+    display: block;
+}
+div.menu>nav>ul>li>a:hover{
+    background-color: lightgray;
+    color: #2b2b2b !important;
+}
+label[for=menu]{
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-color: #2b2b2b;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+#menu,#close{
+    display: none;
+}
+label[for=menu]>div{
+    width: 80%;
+    position: absolute;
+    left: calc(50% - 80% / 2);
+    height: 2px;
+    background-color: whitesmoke;
+}
+label[for=menu]>div:nth-of-type(1){
+    top: 10px;
+}
+label[for=menu]>div:nth-of-type(2){
+    top: 15px;
+}
+label[for=menu]>div:nth-of-type(3){
+    top: 20px;
+}
+#menu:checked ~ div.menu{
+    left: 0;
+}
+label[for=close]{
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     right: 0;
+     top: 0;
+     background-color: crimson;
+     text-align: center;
+     line-height: 20px;
+     font-size: 30px;
+     color: white;
+     cursor: pointer;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
